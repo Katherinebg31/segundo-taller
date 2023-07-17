@@ -1,0 +1,14 @@
+<div id="restablecer-form">
+    <form id="formulario-restablecer" *ngIf="mostrarFormulario === 'restablecer'" (submit)="submitFormRestablecer()">
+      <h2>Restablece tu Contraseña!</h2>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" required>
+      <p>Ingresa tu correo y te enviaremos una nueva contraseña.</p>
+  
+      <button type="submit">Enviar</button>
+      
+     
+    </form>
+  </div>
+  

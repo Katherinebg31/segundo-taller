@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'segundo-taller';
+  title: string = 'segundo-taller'; 
+
+  mostrarFormulario: string = 'registro';
+
+  cambiarFormulario(formulario: string) {
+    this.mostrarFormulario = formulario;
+  }
 }
